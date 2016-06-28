@@ -1,6 +1,8 @@
 # WARNING
 AWS has recently made changes to their EB ENV variables that are catastrophic for much of the rails deployment approaches for EB. This includes whenever-elasticbeanstalk. We are investigating how we can address these issues. Please see [Issue 18](https://github.com/dignoe/whenever-elasticbeanstalk/issues/18) for further details. Will update when a resolution is available.
 
+Note: This Gem conflicts with new version on aws-sdk and as the maintainer is no long maintaining the project. Anyone who is using this Gem should fork out and make additional changes if facing any issue.
+
 # Whenever::Elasticbeanstalk
 
 Whenever-elasticbeanstalk is an extension gem to [Whenever](https://github.com/javan/whenever) that automatically ensures that one instance in an AWS Elastic Beanstalk environment is set as leader. This allows you to run cron jobs on all instances, or just on the leader. This is required since Elastic Beanstalk may start or stop any instance as it scales up or down.
