@@ -1,8 +1,8 @@
 #!/usr/bin/ruby
 
 require           'rubygems'
-gem               'aws-sdk'
-require           'aws-sdk'
+gem               'aws-sdk-v1'
+require           'aws-sdk-v1'
 require           'erb'
 
 EB_CONFIG_APP_SUPPORT = ENV['EB_CONFIG_APP_SUPPORT']
